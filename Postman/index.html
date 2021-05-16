@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="postman.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <title>POSTMAN</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Manual</a>
+                    <a class="nav-link" href="#">About us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- heading -->
+    <h1 class="text-center my-3" style="color: #00203FFF; font-family: 'Pattaya', sans-serif;">Welcome to Postman</h1>
+
+    <div class="container-fluid box">
+        <div class="main">
+
+            <!-- input url  -->
+            <div class="mb-3 row">
+                <label for="inputUrl" class="col-sm-2 col-form-label ">URL</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="url" placeholder="Enter URL here">
+                </div>
+            </div>
+
+            <!-- input request type  -->
+            <div class="mb-3 row">
+                <label for="inputType" class="col-sm-2 col-form-label">Request Type</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="requestTypeRadio" id="GET" value="GET">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            GET
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="requestTypeRadio" id="POST" value="POST">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            POST
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- input content type  -->
+            <div class="mb-3 row">
+                <label for="inputType" class="col-sm-2 col-form-label">Content Type</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contentTypeRadio" id="jsonRadio" value="JSON">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            JSON
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contentTypeRadio" id="paramsRadio" value="Custom Parameters">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Custom Parameters
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Parameters box  -->
+            <div class="mb-3 row" id="customParams">
+                <label for="inputParams" class="col-sm-2 col-form-label">Parameter 1</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputKey1" placeholder="Enter Key ">
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputValue1" placeholder="Enter Value">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3" id="addParams">+</button>
+                </div>
+                <div id="newParams"></div>
+            </div>
+
+            <!-- JASON Request box -->
+            <div class="mb-3 row" id="jsonBox">
+                <label for="inputjJASON" class="col-sm-2 col-form-label">Request JSON</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Enter JSON here" id="jsonTxt"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit button fetching API -->
+            <div class="col-12 text-center my-5">
+                <button type="submit" class="btn btn-primary" id="submit">Fetch API</button>
+            </div>
+
+            <!-- response box -->
+            <div class="mb-3 row" id="responseBox">
+                <label for="output" class="col-sm-2 col-form-label">Response</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" aria-label="With textarea" id="Response"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="postman.js"></script>
+</body>
+
+</html>
