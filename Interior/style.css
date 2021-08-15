@@ -1,0 +1,286 @@
+body {
+  background: #181719;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.ph1 {
+  background: #181719;
+}
+
+h1 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+.info {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+nav button {
+  border: 1px solid #ffffff;
+  background-color: #181719;
+  color: white;
+  width: 102px;
+  height: 32px;
+  box-sizing: border-box;
+
+  font-family: Crimson Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 16px;
+  letter-spacing: 0em;
+
+  margin: 16px 50px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 50px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+nav ul li:first-child {
+  font-weight: 700;
+  position: relative;
+}
+
+nav ul li:first-child::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 60px 50px 200px 50px;
+}
+
+.ph1 {
+  width: 85%;
+  margin-left: 15%;
+}
+
+.read {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.col-1 {
+  flex-basis: 50%;
+}
+
+.col-2 {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card {
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 0 20px;
+}
+
+.foot {
+  padding: 10px 0 0 20px;
+}
+
+.desc {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-align: left;
+}
+
+.name {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.07em;
+  text-align: left;
+}
+
+h2 {
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.07em;
+  text-align: left;
+}
+
+.text-center {
+    display: block;
+    text-align: center;
+}
+
+.c1 {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+.ph2 {
+    width: 40px;
+    border-radius: 50%;
+    margin: 40% 0 0 5px;
+  }
+
+svg {
+    fill: white;
+    margin: 5px 50px;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+#not-menu {
+    display: block;
+}
+
+html, body {
+    margin:0px;
+    height:100%;
+  }
+
+@media only screen and (max-width: 1200px) {
+
+    #not-menu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    svg {
+        display: inline-block;
+        cursor: pointer;
+        stroke: white;
+        width: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ph1 {
+        margin: 40px 0;
+        width: 100%;
+    }
+
+    .col-1{
+        flex-basis: 1%;
+    }
+
+    .card {
+        width: 50%;
+        left: 45%;
+        bottom: -80px;
+    }
+
+    #menu{
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        color: white;
+        z-index: 2;
+        position: absolute;
+        overflow-x: hidden ;
+    }
+
+    #menu ul {
+        list-style: none;
+        margin-top: 30%;
+        padding: 0;
+    }
+
+    #menu ul li {
+        margin: 20px auto;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .list {
+        display: none;
+    }
+
+    #menu ul li:first-child {
+        font-weight: 700;
+        position: relative;
+      }
+      
+    #menu ul li:first-child::after {
+        content: "";
+        width: 10%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 45%;
+        bottom: 0;
+    }
+}
