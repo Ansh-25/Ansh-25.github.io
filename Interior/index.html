@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interior consultant</title>
+</head>
+<body>
+    <div id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50" overflow="visible" stroke="black" stroke-width="10" stroke-linecap="round" onclick="Onclick2()">
+            <line x1="0" y1="0" x2="50" y2="50" />
+            <line x1="50" y1="0" x2="0" y2="50" />
+        </svg>
+        <ul>
+            <li class ="home"><span></span>Home</li>
+            <li>Collection</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="not-menu">
+        <nav>
+            <button>This interior</button>
+            <ul class="list">
+                <li class = "home"><span></span>Home</li>
+                <li>Collection</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <svg viewBox="0 0 100 80" width="40" height="40" onclick="Onclick1()">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </nav>
+        <div class="row">
+            <div class="col-1">
+                <h1>Modern interior</h1>
+                <p class="info">A full-Service residential & <br> commercial interior design and <br> staging company offering <br> professional organizing & <br> eco-services.</p>
+                <br>
+                <a href="#" class="read">
+                    Read more ➡
+                </a>
+            </div>
+            <div class="col-2">
+                <img src="photo1.png" alt="img1" class="ph1">
+                <div class="card">
+                    <div class="head">
+                        <div class="c1">
+                            <img src="photo2.png" alt="img2 "class= "ph2">
+                        </div>
+                        <div class="c2">
+                            <p class="name">Aliza webber</p>
+                            <p class="desc">Interior designer</p>
+                    
+                        </div>
+                    </div>
+                    <div class="foot">
+                        <h2>Designed in 2020 by</h2>
+                        <h2>Aliza Webber</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="text-center">created by Ansh-25 - devChallenges.io</a>
+    </div>
+
+<script>
+    function Onclick1() {
+        var x = document.getElementById("menu");
+        var y = document.getElementById("not-menu");
+        if (x.style.display === "") {
+            x.style.display = "block";
+            y.style.display = "none";
+        }
+        else if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            console.log(y.style.display)
+        }
+    }
+
+    function Onclick2() {
+        var x = document.getElementById("menu");
+        var y = document.getElementById("not-menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    }
+</script> 
+
+</body>
+</html>
