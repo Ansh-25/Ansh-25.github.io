@@ -5,6 +5,6 @@
 
 ## Overview
 
-![screenshot](assets/screenshot.png)
+![screenshot](assets/Screenshot.png)
 
 ## ! To be made responsive
